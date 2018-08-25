@@ -3,6 +3,8 @@
 All the theme I have created or modified live here but my primary one is
 `beanbag.zsh-theme`.
 
+_Note: the screenshots below have what looks like ghosting... its where my terminal is translucent._
+
 ## beanbag
 
 ![beanbag.zsh-theme screenshot](beanbag-zsh-theme-screenshot.png)
