@@ -17,11 +17,12 @@ P1_ARROW='%{$PROMPT_PROMPT%}╔'
 P1_ICON=' ☕️ '
 P1_BASE='%{$reset_color%} %{$PROMPT_SUCCESS_COLOR%}%m:%{$reset_color%}%{$fg[yellow]%}%~'
 P1_GITINFO='%{$reset_color%} %{$GIT_PROMPT_INFO%}$(git_prompt_info)%{$reset_color%}%{$GIT_DIRTY_COLOR%}$(git_remote_status)%{$reset_color%} $(git_prompt_status)'
+P1_KUBE_PS1=' $(kube_ps1) %{$reset_color%}'
 P1_EXIT='%{$reset_color%}%(0?. . %{$PROMPT_FAILURE_COLOR%}[exit code %?]%{$reset_color%} )'
 P2_NL=$'\n'
 P2_ARROW='%{$PROMPT_PROMPT%}╚ᐅ%{$reset_color%} '
 
-PROMPT="$P1_ARROW$P1_ICON$P1_BASE$P1_GITINFO$P1_EXIT$P2_NL$P2_ARROW"
+PROMPT="$P1_ARROW$P1_ICON$P1_BASE$P1_GITINFO$P1_KUBE_PS1$P1_EXIT$P2_NL$P2_ARROW"
 
 #RPS1="${return_code}"
 
